@@ -15,8 +15,3 @@ class Blogpost extends Component {
         );
     }
 }
-
-//ReactDom.render(
-//  <Blogpost />,
-//  document.getElementById('app')
-//)

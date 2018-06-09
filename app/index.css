@@ -1,3 +1,19 @@
+/* Vanilla CSS for now */
 body {
   background: skyblue;
+}
+
+.react-loading-placeholder {
+
+}
+
+.loading {
+  color: #efefef;
+  background: #efefef;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.header {
+  padding: 0.3em;
 }
