@@ -1,18 +1,23 @@
-var React = require('react');
-var ReactDom = require('react-dom');
-require('./index.css');
+import React, { Component } from 'react';
+import ReactDom from 'react-dom';
+import PropTypes from 'prop-types';
+import './index.css';
 
-class App extends React.Component {
+
+export default class Placeholders extends Component {
+
   render() {
+    const elements = [];
+    elements.map((i) => <span key={i}>Loader</span>);
     return (
-      <div>
-        Hello React Loading Placeholders!
-      </div>
+      <span className="react-loading-placeholder">
+        {elements}
+      </span>
     )
   }
 }
 
 ReactDom.render(
-  <App />,
+  <Placeholders />,
   document.getElementById('app')
 )
