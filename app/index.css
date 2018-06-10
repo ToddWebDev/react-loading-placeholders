@@ -14,12 +14,7 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
   width: 100%;
-  line-height: 1;
   border-radius: 5px;
-}
-
-.header {
-  padding: 0.3em;
 }
 
 @keyframes blink {
