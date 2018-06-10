@@ -9,8 +9,4 @@ class Placeholder extends Component {
   }
 }
 
-Placeholder.defaultProps = {
-  element: 'Default Placeholder Text'
-}
-
 export default Placeholder;

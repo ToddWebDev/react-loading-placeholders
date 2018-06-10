@@ -4,8 +4,10 @@ body {
 }
 
 .react-loading-placeholder > span {
+  display: block;
   color: transparent;
   background-color: #c5e6f9;
+  margin-bottom: 15px;
 }
 
 .loading {
@@ -13,7 +15,6 @@ body {
   animation-duration: 1.4s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
-  width: 100%;
   border-radius: 5px;
 }
 
