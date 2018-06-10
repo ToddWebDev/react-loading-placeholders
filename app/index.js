@@ -11,9 +11,9 @@ export default class Placeholders extends Component {
     const elements = ['My React Loading Placeholder'];
     elements.map((element) => <span key={element.toString()}>Loader</span>);
     return (
-      <div className="react-loading-placeholder">
+      <span className="react-loading-placeholder">
         <Header />
-      </div>
+      </span>
     )
   }
 }

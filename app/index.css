@@ -5,14 +5,16 @@ body {
 
 .react-loading-placeholder > span {
   color: transparent;
+  background-color: #c5e6f9;
 }
 
 .loading {
-  background-color: #c5e6f9;
-  animation-name: loading;
-  animation-duration: 4s;
+  animation-name: blink;
+  animation-duration: 1.4s;
   animation-iteration-count: infinite;
+  animation-fill-mode: both;
   width: 100%;
+  line-height: 1;
   border-radius: 5px;
 }
 
@@ -20,10 +22,14 @@ body {
   padding: 0.3em;
 }
 
-@keyframes loading {
-    0%   {background-color:#c5e6f9;}
-    25%  {background-color:#a0dcff;}
-    50%  {background-color:#c5e6f9;}
-    75%  {background-color:#a0dcff;}
-    100% {background-color:#c5e6f9;}
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
 }
