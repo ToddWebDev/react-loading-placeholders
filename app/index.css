@@ -3,17 +3,27 @@ body {
   background: skyblue;
 }
 
-.react-loading-placeholder {
-
+.react-loading-placeholder > span {
+  color: transparent;
 }
 
 .loading {
-  color: #efefef;
-  background: #efefef;
+  background-color: #c5e6f9;
+  animation-name: loading;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .header {
   padding: 0.3em;
+}
+
+@keyframes loading {
+    0%   {background-color:#c5e6f9;}
+    25%  {background-color:#a0dcff;}
+    50%  {background-color:#c5e6f9;}
+    75%  {background-color:#a0dcff;}
+    100% {background-color:#c5e6f9;}
 }
